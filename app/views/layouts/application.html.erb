@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shikoku</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <main>
+      <center>
+        <%= yield %>
+      </center>
+    </main>
+    <footer>
+     <div style="width: 100%; float: right; background-color: #00ff00; position: absolute; bottom: 0;">
+      <p style="float: right;">Copyright © 2021 Yoshihisa Tanaka</p>
+      </div>
+    </footer>
+  </body>
+</html>

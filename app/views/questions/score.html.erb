@@ -1,0 +1,8 @@
+<h1>結果発表</h1>
+<% if @score == "0" %>
+    <h2 class="bad">不正解！残念！</h2>
+    <h1 class="bad"><%= @score %>点じゃボケェ！</h1>
+<% else %>
+    <h2 class="score">大正解！おめでとう！</h2>
+    <h1 class="score"><%= @score %>点獲得！</h1>
+<% end %>
